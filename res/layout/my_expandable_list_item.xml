@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="30dp" >
+
+   <TextView
+       android:id="@+id/lblListItem"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_toRightOf="@+id/textView1"
+       android:gravity="center"
+       android:paddingBottom="5dp"
+       android:paddingTop="5dp"
+       android:text="123"
+       android:textColor="#ff444444"
+       android:textSize="18sp" />
+
+   <TextView
+       android:id="@+id/textView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_centerVertical="true"
+       android:layout_marginLeft="45dp"
+       android:gravity="center"
+       android:text="成員："
+       android:textSize="18sp" />
+
+</RelativeLayout>

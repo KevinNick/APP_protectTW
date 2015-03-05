@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Protect_TW</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_infomation_tab">Infomation_tab</string>
+    <string name="title_activity_group_tab">Group_tab</string>
+    <string name="title_activity_message_tab">Message_tab</string>   
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="lightsteelblue">#dfb0c4de</drawable>
+    <drawable name="transparent">#00000000</drawable>
+
+    <string name="title_activity_login_page">Login_page</string>
+    <string name="title_activity_setting_tab">Setting_tab</string>
+    <string name="title_activity_alarm_message">Alarm_message</string>
+
+</resources>

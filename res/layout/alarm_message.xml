@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="40dp"
+        android:text="傳送緊急通知報告："
+        android:textColor="#ff0000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="24dp"
+        android:text="(可選擇預設告警，或自行編輯)" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="26dp"
+        android:textSize="18sp"
+        android:text="比賽情境" />
+
+    <Button
+        android:id="@+id/protect_sence1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="8dp"
+        android:text="淹水災難" />
+
+    <Button
+        android:id="@+id/protect_sence2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/protect_sence1"
+        android:layout_below="@+id/protect_sence1"
+        android:layout_marginTop="9dp"
+        android:text="遇見喪屍" />
+
+    <Button
+        android:id="@+id/protect_sence3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/protect_sence2"
+        android:layout_below="@+id/protect_sence2"
+        android:layout_marginTop="8dp"
+        android:text="火山爆發" />
+
+    <Button
+        android:id="@+id/protect_sence4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/protect_sence3"
+        android:layout_below="@+id/protect_sence3"
+        android:layout_marginTop="8dp"
+        android:text="遇見變態" />
+
+    <Button
+        android:id="@+id/protect_sence5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/protect_sence4"
+        android:layout_below="@+id/protect_sence4"
+        android:layout_marginTop="8dp"
+        android:text="海嘯天災" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:textSize="18sp"
+        android:text="實際情境：" />
+
+    <Button
+        android:id="@+id/real_sence1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="8dp"
+        android:text="車禍意外" />
+
+    <Button
+        android:id="@+id/real_sence2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/protect_sence2"
+        android:layout_alignBottom="@+id/protect_sence2"
+        android:layout_alignLeft="@+id/real_sence1"
+        android:text="爆炸災難" />
+
+    <Button
+        android:id="@+id/real_sence3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/protect_sence3"
+        android:layout_alignBottom="@+id/protect_sence3"
+        android:layout_alignLeft="@+id/real_sence2"
+        android:text="火警災難" />
+
+    <Button
+        android:id="@+id/real_sence4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/protect_sence4"
+        android:layout_alignBottom="@+id/protect_sence4"
+        android:layout_alignLeft="@+id/real_sence3"
+        android:text="人員落海" />
+
+    <Button
+        android:id="@+id/real_sence5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/protect_sence5"
+        android:layout_alignBottom="@+id/protect_sence5"
+        android:layout_alignLeft="@+id/real_sence4"
+        android:text="身體不適" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/protect_sence5"
+        android:layout_below="@+id/protect_sence5"
+        android:layout_marginTop="19dp"
+        android:text="其他："
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edit_other_sence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toLeftOf="@+id/other_sence"
+        android:layout_toRightOf="@+id/textView3"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="textMultiLine" >
+    </EditText>
+
+    <Button
+        android:id="@+id/other_sence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_other_sence"
+        android:layout_alignBottom="@+id/edit_other_sence"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="發送" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="返回" />
+
+</RelativeLayout>

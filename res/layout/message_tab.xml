@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <EditText
+        android:id="@+id/edit_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/send_msg_button"
+        android:layout_toLeftOf="@+id/send_msg_button"
+        android:ems="10" 
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+    </EditText>
+    
+    <Button
+        android:id="@+id/send_msg_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="發送" 
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/group_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <ListView
+        android:id="@+id/message_content_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send_msg_button"
+        android:layout_below="@+id/group_spinner" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/alarm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="緊急訊息" />
+
+</RelativeLayout>
